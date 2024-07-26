@@ -1,1 +1,1 @@
-avidemux_cli --load $OriginalVideoPath --var audio_path=$CombinedOutputPath --output-format ffPS --video-codec ffMpeg2 --audio-codec LavAC3 --run $ConvertToDVDScript --save $OutputVideoPath
+avidemux_cli --load $OriginalVideoPath --var audio_path=$CombinedOutputPath --var output_path=$OutputVideoPath --output-format ffPS --video-codec ffMpeg2 --audio-codec LavAC3 --run $ConvertToDVDScript
