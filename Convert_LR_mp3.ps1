@@ -1,4 +1,1 @@
-Start-Process -FilePath $AudacityPath
-Start-Sleep -Seconds 3.0
-
-python $PanAudioLRScript $FolderBrowser.SelectedPath
+ffmpeg -i $OriginalAudioPath  -i $KaraokeAudioPath -filter_complex "[0:a][1:a]amerge=inputs=2,pan=stereo|c0<c0+c1|c1<c2+c3[a]" -map "[a]" -c:a ac3 $CombinedOutputPath

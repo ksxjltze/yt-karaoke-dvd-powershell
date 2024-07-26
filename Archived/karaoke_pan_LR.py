@@ -127,8 +127,8 @@ def run():
     do_command("SelAllTracks")
     do_command(export_command)
     
-    project_path = '"' + folder_path + "\\project.aup3" + '"'
-    do_command(f"SaveProject2: Filename={project_path}")
+    # project_path = '"' + folder_path + "\\project.aup3" + '"'
+    # do_command(f"SaveProject2: Filename={project_path}")
     
     do_command("Exit")
 
