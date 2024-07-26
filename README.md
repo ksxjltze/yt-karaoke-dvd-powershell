@@ -23,3 +23,9 @@ Dependencies:
 - demucs: https://github.com/adefossez/demucs
 - ffmpeg: https://www.ffmpeg.org/
 - avidemux: https://avidemux.sourceforge.net/
+
+Usage:
+1. Run Convert_FULL.ps1 in a powershell terminal.
+2. Enter desired YouTube URL
+3. Select output folder
+4. Profit
