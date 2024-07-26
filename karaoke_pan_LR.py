@@ -42,9 +42,9 @@ if not os.path.exists(FROMNAME):
 
 print("-- Both pipes exist.  Good.")
 
-TOFILE = open(TONAME, 'w', encoding="utf-8")
+TOFILE = open(os.path.normpath(TONAME), 'w', encoding="utf-8")
 print("-- File to write to has been opened")
-FROMFILE = open(FROMNAME, 'rt')
+FROMFILE = open(os.path.normpath(FROMNAME), 'rt')
 print("-- File to read from has now been opened too\r\n")
 
 

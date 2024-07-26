@@ -1,0 +1,1 @@
+$AvidemuxCLI --load $OriginalVideoPath --var audio_path=$KaraokeAudioPath --output-format ffPS --video-codec ffMpeg2 --audio-codec LavAC3 --run $ConvertToDVDScript --save $OutputVideoPath
